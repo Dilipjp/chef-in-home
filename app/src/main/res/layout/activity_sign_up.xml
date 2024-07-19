@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:hint="Name"
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:padding="16dp"/>
+
+        <EditText
+            android:hint="Email"
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:padding="16dp"/>
+
+        <EditText
+            android:hint="Password"
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:padding="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupRole"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User"
+                android:layout_marginRight="20dp"
+                android:minHeight="48dp"
+                android:padding="16dp"/>
+
+            <RadioButton
+                android:id="@+id/radioChef"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chef"
+                android:minHeight="48dp"
+                android:padding="16dp"/>
+        </RadioGroup>
+
+        <Button
+            android:text="Sign Up"
+            android:id="@+id/register_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:minHeight="48dp"
+            android:padding="16dp"
+            android:backgroundTint="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already signed up?"
+                android:layout_marginRight="10dp"
+                android:minHeight="48dp"
+                android:padding="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:onClick="doSignIn"
+                android:text="Login"
+                android:minHeight="48dp"
+                android:padding="16dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    tools:context=".SignOutActivity">
+
+    <TextView
+        android:id="@+id/textViewMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are you  want to sign out?"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="32dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/buttonYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:layout_marginEnd="16dp"/>
+
+        <Button
+            android:id="@+id/buttonNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:layout_marginStart="16dp"/>
+    </LinearLayout>
+
+</LinearLayout>

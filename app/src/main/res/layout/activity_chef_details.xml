@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Chef Details" />
+
+    <!-- Profile Picture and Basic Details -->
+    <LinearLayout
+        android:id="@+id/firstRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Chef's Profile Picture -->
+        <ImageView
+            android:id="@+id/imageViewChef"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_profile"
+            android:layout_marginEnd="16dp"/>
+
+        <!-- Basic Details -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewChefName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="Chef Name" />
+
+            <TextView
+                android:id="@+id/textViewChefSpecialty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Specialty"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/textViewChefAvailability"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Availability"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Additional Details and Request Button -->
+    <LinearLayout
+        android:id="@+id/secondRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstRow"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Column 1 for Rating -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rating"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/textViewChefRating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <!-- Column 2 for Experience -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Experience"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/textViewChefExperience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <!-- Column 3 for Request Button -->
+        <Button
+            android:id="@+id/buttonRequestChef"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Request Chef"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"/>
+    </LinearLayout>
+
+    <!-- Additional Details Text -->
+    <TextView
+        android:id="@+id/textViewChefBio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/secondRow"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Additional details about the chef."
+        android:textSize="14sp" />
+
+</RelativeLayout>

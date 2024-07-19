@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChefActivity">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:title="Chef Profile"
+        app:titleTextColor="@android:color/white"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <!-- Cover Photo -->
+    <ImageView
+        android:id="@+id/imageViewCoverPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_cover_photo"
+        android:background="@color/divider_gray"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Profile Photo -->
+    <ImageView
+        android:id="@+id/imageViewProfilePhoto"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="-60dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/ic_profile"/>
+
+    <!-- Chef Name -->
+    <TextView
+        android:id="@+id/textViewChefName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chef Name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Chef Specialty -->
+    <TextView
+        android:id="@+id/textViewChefSpecialty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Specialty"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_gray"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Chef Availability -->
+    <TextView
+        android:id="@+id/textViewChefAvailability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Availability"
+        android:layout_marginLeft="20dp"
+        android:textSize="18sp"/>
+
+    <!-- Chef Contact -->
+    <TextView
+        android:id="@+id/textViewChefContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Chef Experience -->
+    <TextView
+        android:id="@+id/textViewChefExperience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Experience"
+        android:layout_marginLeft="20dp"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Chef Rating -->
+    <TextView
+        android:id="@+id/textViewChefRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rating"
+        android:layout_marginLeft="20dp"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_gray"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Chef Bio -->
+    <TextView
+        android:id="@+id/textViewChefBio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Bio"
+        android:textSize="18sp"/>
+
+</LinearLayout>

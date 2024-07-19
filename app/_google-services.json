@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "357709145481",
+    "firebase_url": "https://chef-in-home-default-rtdb.firebaseio.com",
+    "project_id": "chef-in-home",
+    "storage_bucket": "chef-in-home.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357709145481:android:cfa8c2a4f6b1e4cf866d58",
+        "android_client_info": {
+          "package_name": "com.example.chef_in_home"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrTszm3g1g9ghAKlWrQLt5JSPLiIz3WaI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

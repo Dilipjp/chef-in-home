@@ -1,0 +1,87 @@
+{
+  "project_info": {
+    "project_number": "1099365478344",
+    "firebase_url": "https://login-92364-default-rtdb.firebaseio.com",
+    "project_id": "login-92364",
+    "storage_bucket": "login-92364.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1099365478344:android:0400b40f48a92977bb1afd",
+        "android_client_info": {
+          "package_name": "com.dilip.weddingplanner"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIAx5oeax20lkmaK7PowAzhoVJWrtqouU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1099365478344:android:2d3df63711fb4db5bb1afd",
+        "android_client_info": {
+          "package_name": "com.example.chef_in_home"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIAx5oeax20lkmaK7PowAzhoVJWrtqouU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1099365478344:android:cff6119bd281724fbb1afd",
+        "android_client_info": {
+          "package_name": "com.example.firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIAx5oeax20lkmaK7PowAzhoVJWrtqouU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1099365478344:android:48c5aa3e4109abb6bb1afd",
+        "android_client_info": {
+          "package_name": "com.example.firebase_crud"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIAx5oeax20lkmaK7PowAzhoVJWrtqouU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
